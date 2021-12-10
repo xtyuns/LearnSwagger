@@ -1,0 +1,2 @@
+[SpringFox](https://github.com/springfox/springfox) is more use of the swagger v2, not v3  
+[SpringDoc](https://github.com/springdoc/springdoc-openapi) is better support for swagger v3([OAS3](https://github.com/OAI/OpenAPI-Specification))
