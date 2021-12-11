@@ -18,6 +18,7 @@
         <module>use1-springfox</module>
         <module>use2-springdoc</module>
         <module>use3-springdoc-security</module>
+        <module>use4-springdoc-security-global</module>
     </modules>
 
     <properties>
