@@ -22,6 +22,7 @@
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.5.13</version>
         </dependency>
+        <!--This dependency helps ignoring @AuthenticationPrincipal in case its used on REST Controllers.-->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-security</artifactId>
