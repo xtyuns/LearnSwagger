@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="use3-springdoc-security" />
         <module name="use1-springfox" />
         <module name="use2-springdoc" />
       </profile>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="use1-springfox" options="-parameters" />
       <module name="use2-springdoc" options="-parameters" />
+      <module name="use3-springdoc-security" options="-parameters" />
     </option>
   </component>
 </project>
