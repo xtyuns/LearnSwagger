@@ -25,12 +25,16 @@ public class IndexController {
         return ResponseEntity.ok("ok");
     }
 
-    @Operation(summary = "计算两个数字的和")
-    @Parameters({
-            @Parameter(name = "num1", description = "第一个数字", required = true),
-            @Parameter(name = "num2", description = "第二个数字", example = "0")
-    })
-    @ApiResponse(responseCode = "200", description = "返回指定数字之和")
+    @Operation(
+            summary = "计算两个数字的和",
+            parameters = {
+                    @Parameter(name = "num1", description = "第一个数字", required = true),
+                    @Parameter(name = "num2", description = "第二个数字", example = "0")
+            },
+            responses = {
+                    @ApiResponse(responseCode = "200", description = "返回指定数字之和")
+            }
+    )
     @GetMapping("sum")
     public ResponseEntity<Integer> getSum(Integer num1,@RequestParam(defaultValue = "0") Integer num2) {
         return ResponseEntity.ok(num1 + num2);
